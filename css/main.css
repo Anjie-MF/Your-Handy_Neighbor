@@ -86,6 +86,106 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.content-wrapper {
+  outline: 3px dotted orange;
+  width: 90%;
+}
+
+/* === Base Header and Footer Styles === */
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  justify-self: space-between;
+  list-style-type: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer .content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------------------Mobile Style-------------------------*/
+
+/* === Homepage ===*/
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+}
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+}
+/* === About Page ===*/
+
+.mission {
+  display: flex;
+  justify-content: center;
+}
+
+#co-workers {
+  display: flex;
+  justify-content: center;
+}
+
+/* === FAQ Page ===*/
+
+.faq {
+  display: flex;
+  justify-content: center;
+}
+
+.faq .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
 
 /* ==========================================================================
    Helper classes
@@ -180,9 +280,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -193,6 +293,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -260,4 +361,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-

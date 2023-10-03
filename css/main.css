@@ -516,10 +516,54 @@ aside {
 
 @media screen and (min-width: 1200px) {
 
-  /*Desktop styles here*/
+  /* ==================  HomePage DESKTOP STYLES ===================================================== */
 
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  header {
+    padding: 15px 0;
+  }
+
+  .hero-area h1 {
+    width: 80%;
+  }
+
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%
+  }
+
+  .reviews article div {
+    width: 42%
+  }
+
+  /* ==================  About Page DESKTOP STYLES ===================================================== */
+
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+  }
+
+  /* ==================  FAQ Page DESKTOP STYLES ===================================================== */
+
+  .faq h2 {
+    width: 100%;
+  }
 }
-
 
 
 /* ==========================================================================

@@ -87,9 +87,63 @@ textarea {
    Author's custom styles
    ========================================================================== */
 .content-wrapper {
-  outline: 3px dotted orange;
   width: 90%;
   margin: 50px 0;
+}
+
+/* General Styles */
+ 
+html {
+	font-size: 1rem;
+}
+ 
+body {
+ font-family: 'Oswald', sans-serif;
+ font-size: 1em;
+ text-align: left;
+}
+ 
+ul, 
+ol {
+ list-style-type: none;
+}
+ 
+a {
+	color: blue;
+  text-decoration: none;
+}
+ 
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.875em;
+}
+ 
+h3, 
+h4 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1,125em;
+}
+ 
+p {
+	font-size: .875em;
+  line-height: 1.285em;
+}
+ 
+img {
+ 
+}
+ 
+figure {
+ 
+}
+ 
+address {
+ font-style: normal;
+}
+ 
+.content-wrapper {
+ width: 90%;
+ margin: 50px 0;
 }
 
 /* === Base Header and Footer Styles === */

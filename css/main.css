@@ -133,6 +133,14 @@ p {
 address {
  font-style: normal;
 }
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
  
 .content-wrapper {
  width: 90%;
@@ -221,6 +229,9 @@ footer .copyright {
 /* === Homepage ===*/
 
 .hero-area {
+  background: url(../img/pexels-tima-miroshnichenko-heroimage.jpg );
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
 }
@@ -230,6 +241,7 @@ footer .copyright {
   font-family: 'Oswald', Raleway, sans-serif;
   font-weight: 500;
   line-height: 1.2;
+  color: white /*#F43434*/;
 }
 
 aside {
@@ -254,24 +266,27 @@ input[type=button] {
   width: 100%;
   padding: 20px 0;
   margin-top: 20px;
-  background-color: #6b654b;
+  background-color: #4a4b2f;
   font-family: 'Oswald', Raleway, sans-serif;
   font-weight: 500;
   font-size: 1.125em;
-  color: #12100e;
+  color: #d4df9e;
   border: none;
   text-align: center;
   text-transform: uppercase;
 }
 
 .features {
+  background: url(../img/pexels-tima-miroshnichenko-featuresImg.jpg);
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
-  background: #6b654b;
 }
 
 .features h2 {
   margin-bottom: 60px;
+  color:white;
 }
 
 .features article {
@@ -284,6 +299,7 @@ input[type=button] {
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
+  color: white;
 }
 
 .features p {
@@ -334,16 +350,9 @@ input[type=button] {
   padding: 10px;
 }
 
-/*#co-workers {
-  display: flex;
-  justify-content: center;
+article figure {
+  outline: 3px dotted pink;
 }
-
-#co-workers .team-member {
-  width: 300px;
-  padding: 50px;
-  margin: 0;
-}*/
 
 /* === FAQ Page ===*/
 

@@ -88,50 +88,49 @@ textarea {
    ========================================================================== */
 
 /* General Styles */
- 
+
 html {
-	font-size: 1rem;
+  font-size: 1rem;
   background-color: #4a4b2f;
 }
- 
-body /*aka font styles*/ {
- font-family: 'Oswald', sans-serif;
- font-size: 1em;
- color: #12100e;
- text-align: left;
+
+body
+
+/*aka font styles*/
+  {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1em;
+  color: #12100e;
+  text-align: left;
 }
- 
-ul, 
+
+ul,
 ol {
- list-style-type: none;
+  list-style-type: none;
 }
- 
+
 a {
-	color: #12100e;
+  color: #12100e;
   text-decoration: none;
 }
- 
+
 h2 {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
   font-size: 1.875em;
 }
- 
-h3, 
+
+h3,
 h4 {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
-  font-size: 1,125em;
-  margin: 20px 0; 
+  font-size: 1, 125em;
+  margin: 20px 0;
 }
- 
+
 p {
-	font-size: .875em;
+  font-size: .875em;
   line-height: 1.285em;
-}
- 
-address {
- font-style: normal;
 }
 
 img {
@@ -141,10 +140,14 @@ img {
 figure {
   margin: 0;
 }
- 
+
+address {
+  font-style: normal;
+}
+
 .content-wrapper {
- width: 90%;
- margin: 50px 0;
+  width: 90%;
+  margin: 50px 0;
 }
 
 /* === Base Header and Footer Styles === */
@@ -162,6 +165,10 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+header figure {
+  width: 60%;
 }
 
 .header-divider {
@@ -229,20 +236,21 @@ footer .copyright {
 /* === Homepage ===*/
 
 .hero-area {
-  background: url(../img/pexels-tima-miroshnichenko-heroimage.jpg );
+  background: url(../img/pexels-tima-miroshnichenko-heroimage\(1\).jpg);
   background-size: cover;
   background-position: center;
+  min-height: 500px;
   display: flex;
   justify-content: center;
 }
 
-.hero-area h1 {
+/*.hero-area h1 {
   font-size: 2.25em;
   font-family: 'Oswald', Raleway, sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.2;
-  color: white /*#F43434*/;
-}
+  color: #d4df9e;
+}*/
 
 aside {
   background-color: #d4df9e;
@@ -253,7 +261,7 @@ aside {
 aside .form {
   margin-top: 30px;
 }
- 
+
 input[type=text] {
   box-sizing: border-box;
   width: 100%;
@@ -261,7 +269,7 @@ input[type=text] {
   font-style: italic;
   padding: 1em;
 }
- 
+
 input[type=button] {
   width: 100%;
   padding: 20px 0;
@@ -277,7 +285,7 @@ input[type=button] {
 }
 
 .features {
-  background: url(../img/pexels-tima-miroshnichenko-featuresImg.jpg);
+  background: url(../img/pexels-irina-zhur-9918803.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -286,7 +294,7 @@ input[type=button] {
 
 .features h2 {
   margin-bottom: 60px;
-  color:white;
+  color: white;
 }
 
 .features article {
@@ -316,11 +324,17 @@ input[type=button] {
 .reviews h2 {
   margin-bottom: 40px;
   line-height: 2;
+  color: #d4df9e;
 }
 
 .reviews h3 {
   width: 55%;
   margin: 20px 0;
+  color: #d4df9e;
+}
+
+.reviews p {
+  color: #d4df9e;
 }
 
 /* === About Page ===*/
@@ -331,10 +345,16 @@ input[type=button] {
   justify-content: center;
 }
 
+.mission h2,
+p {
+  color: #d4df9e;
+}
+
 .crew {
+  background-color: #454130;
   display: flex;
   justify-content: center;
-  background-color: #6b654b;
+  color: #FFFFFF;
 }
 
 .crew .crew-info {
@@ -348,10 +368,6 @@ input[type=button] {
   width: 50%;
   box-sizing: border-box;
   padding: 10px;
-}
-
-article figure {
-  outline: 3px dotted pink;
 }
 
 /* === FAQ Page ===*/
@@ -372,6 +388,7 @@ article figure {
 .faq h2 {
   margin-bottom: 40px;
   line-height: 1;
+  color: #d4df9e;
 }
 
 .faq-content {
@@ -380,6 +397,11 @@ article figure {
 
 .faq-content h4 {
   line-height: 1.333;
+  color: #d4df9e;
+}
+
+.faq p {
+  color: #d4df9e;
 }
 
 /* ==========================================================================
@@ -500,7 +522,7 @@ article figure {
     width: 100%;
     justify-content: space-between;
   }
- 
+
   header figure {
     width: 30%;
   }
@@ -519,11 +541,10 @@ article figure {
 
   /* Hero Area */
 
-  .hero-area h1 {
-    font-size: 3em;
-    line-height: 1;
-    margin: 0;
+  .hero-area {
+    min-height: 600px;
   }
+
 
   /* Aside */
 
@@ -554,7 +575,7 @@ article figure {
   }
 
   .features .features-item-description {
-    width: 50%;
+    width: 62%;
   }
 
   /* Reviews */
@@ -567,6 +588,7 @@ article figure {
     width: 85%;
   }
 
+  .reviews article figure,
   .reviews article div {
     width: 49%;
   }
@@ -579,7 +601,6 @@ article figure {
   /* Footer */
   footer .content-wrapper {
     width: 65%;
-    margin: 100px 0;
   }
 
   .footer-content {
@@ -629,15 +650,10 @@ article figure {
   background-color: #6b654b;
 }
 
-/*.crew .content-wrapper {
-  outline: 3px red dotted;
-    /* Add any specific styles for the content wrapper */
-
 .crew .crew-info {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /*justify-content: space-between;*/
 }
 
 .crew-info article {
@@ -645,11 +661,6 @@ article figure {
   box-sizing: border-box;
   padding: 10px;
 }
-
-/*.crew article {
-  flex: 5;
-  padding: 10px;
-}*/
 
 .crew .fontawesome-icon {
   /* Your styles for fontawesome icons */
@@ -725,11 +736,6 @@ article figure {
     line-height: 1.333;
   }
 
-  .hero-area h1 {
-    font-size: 3.75em;
-    width: 80%;
-  }
-
   aside .content-wrapper {
     justify-content: space-around;
   }
@@ -739,11 +745,9 @@ article figure {
     width: 30%;
   }
 
-  .form-description p [
-    font-size: 1.125em;
-  ]
+  .form-description p [ font-size: 1.125em;
 
-  .features h2 {
+  ] .features h2 {
     width: 90%;
   }
 

@@ -313,6 +313,12 @@ input[type=button] {
 .features p {
   text-align: center;
   margin: 0;
+  color: #fff;
+}
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 .reviews {

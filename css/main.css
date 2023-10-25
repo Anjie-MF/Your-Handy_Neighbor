@@ -189,6 +189,8 @@ header nav ul {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  margin: 0;
+  padding: 0;
 }
 
 header nav ul li {
@@ -222,13 +224,18 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  background-color: #4a4b2f;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-footer .copyright {
-  margin: 20px 0;
+footer .copyright p {
+  margin: 40px 0;
+  color: #12100e;
 }
 
 /* ---------------------Mobile Style-------------------------*/
@@ -244,13 +251,6 @@ footer .copyright {
   justify-content: center;
 }
 
-/*.hero-area h1 {
-  font-size: 2.25em;
-  font-family: 'Oswald', Raleway, sans-serif;
-  font-weight: 700;
-  line-height: 1.2;
-  color: #d4df9e;
-}*/
 
 aside {
   background-color: #d4df9e;
@@ -278,10 +278,14 @@ input[type=button] {
   font-family: 'Oswald', Raleway, sans-serif;
   font-weight: 500;
   font-size: 1.125em;
-  color: #d4df9e;
+  color: white;
   border: none;
   text-align: center;
   text-transform: uppercase;
+}
+
+.form-description p {
+  color: #12100e;
 }
 
 .features {
@@ -319,6 +323,8 @@ input[type=button] {
 .features i {
   font-size: 3.75em;
   margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 .reviews {
@@ -346,6 +352,7 @@ input[type=button] {
 address p {
   color: #12100e
 }
+
 
 /* === About Page ===*/
 
@@ -649,6 +656,11 @@ p {
     line-height: 1.285;
   }
 
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
+  }
+
   footer .copyright {
     width: 100%;
   }
@@ -706,14 +718,6 @@ p {
   padding: 10px;
 }
 
-.crew .fontawesome-icon {
-  /* Your styles for fontawesome icons */
-}
-
-.crew .features-crew-description {
-  /* Your styles for crew descriptions */
-}
-
 .content-wrapper h2 {
   display: flex;
   width: 100%;
@@ -754,9 +758,10 @@ p {
   line-height: 1.125;
 }
 
+  /* ==================  HomePage DESKTOP STYLES ===================================================== */
+
 @media screen and (min-width: 1200px) {
 
-  /* ==================  HomePage DESKTOP STYLES ===================================================== */
 
   .content-wrapper {
     max-width: 960px;
@@ -789,9 +794,11 @@ p {
     width: 30%;
   }
 
-  .form-description p [ font-size: 1.125em;
+  .form-description p {
+    font-size: 1.125em;
+  }
 
-  ] .features h2 {
+  .features h2 {
     width: 90%;
   }
 

@@ -102,5 +102,5 @@ npm run build
 
 ## Author
 
-**Your Name**
+**Anjelica MF**
 [GitHub](https://github.com/Anjie-MF) · [LinkedIn](https://www.linkedin.com/in/anjiemay23/)

@@ -664,9 +664,8 @@ border: 0;
   footer .copyright {
     width: 100%;
   }
-}
 
-/* ==================  About Page TABLET STYLES================= */
+   /* ==================  About Page TABLET STYLES================= */
 
 
 .mission-content {
@@ -752,6 +751,7 @@ border: 0;
 .faq p {
   font-size: .875em;
   line-height: 1.125;
+}
 }
 
   /* ==================  HomePage DESKTOP STYLES ===================================================== */

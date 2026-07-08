@@ -356,6 +356,25 @@ address p {
   color: #12100e
 }
 
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 12.5em;
+}
+
+footer .social-icons a.icon-circle {
+  background-color: #4a4b2f;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none; 
+  color: inherit;
+}
+
 
 /* === About Page ===*/
 
@@ -422,6 +441,26 @@ p {
 .faq p {
   color: #d4df9e;
 }
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 12.5em;
+}
+
+footer .social-icons a.icon-circle {
+  background-color: #4a4b2f;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none; 
+  color: inherit;
+}
+
 
 /* ==========================================================================
    Helper classes
@@ -720,6 +759,26 @@ footer .social-icons a.icon-circle {
   font-size: 1.5em;
 }
 
+   footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 12.5em;
+}
+
+footer .social-icons a.icon-circle {
+  background-color: #4a4b2f;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none; 
+  color: inherit;
+}
+
+
 /* ================== FAQ Page TABLET STYLES================= */
 
 .faq .content-wrapper {
@@ -739,6 +798,25 @@ footer .social-icons a.icon-circle {
   font-size: .875em;
   line-height: 1.125;
 }
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 12.5em;
+}
+
+footer .social-icons a.icon-circle {
+  background-color: #4a4b2f;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none; 
+  color: inherit;
 }
 
   /* ==================  HomePage DESKTOP STYLES ===================================================== */
@@ -814,6 +892,25 @@ footer .social-icons a.icon-circle {
     font-size: 1.875em;
   }
 
+   footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 12.5em;
+}
+
+footer .social-icons a.icon-circle {
+  background-color: #4a4b2f;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none; 
+  color: inherit;
+}
+
   /* ==================  FAQ Page DESKTOP STYLES ===================================================== */
 
   .faq h2 {
@@ -826,6 +923,25 @@ footer .social-icons a.icon-circle {
     font-size: 1.125em;
     line-height: 1;
   }
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 12.5em;
+}
+
+footer .social-icons a.icon-circle {
+  background-color: #4a4b2f;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none; 
+  color: inherit;
 }
 
 

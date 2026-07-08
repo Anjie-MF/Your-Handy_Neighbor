@@ -1,171 +1,798 @@
-<!doctype html>
-<html class="no-js" lang="">
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
-<head>
-  <meta charset="utf-8">
-  <title>Your Handy Neighbor</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <script src="https://kit.fontawesome.com/106ba2589c.js" crossorigin="anonymous"></script> 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Raleway:ital,wght@1,500;1,700&display=swap"
-    rel="stylesheet">
-  <meta name="theme-color" content="#fafafa">
-</head>
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
 
-<body>
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
 
-  <header>
-    <div class="content-wrapper">
-      <figure>
-        <a href="index.html">
-          <img src="img/yourhandyneighbor-logo.png" alt="handyman logo">
-        </a>
-      </figure>
-      <div class="header-divider"></div>
-      <nav>
-        <ul>
-          <li><a href="about/index.html">About</a></li>
-          <li><a href="faq/index.html">FAQ</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
 
-  <main>
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
 
-    <section class="hero-area">
-      <div class="content-wrapper"></div>
-    </section>
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
 
-    <aside>
-      <div class="content-wrapper">
-        <div class="form-description">
-          <h3>From Repairs to Renovations, We Got You Covered!</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</p>
-        </div>
-        <div class="form">
-          <h3>Download our project cost guide for FREE!</h3>
-          <input type="text" name="name" value="email address">
-          <input type="button" value="Download Cost Guide">
-        </div>
-      </div>
-    </aside>
+textarea {
+  resize: vertical;
+}
 
-    <section class="features">
-      <div class="content-wrapper">
-        <h2>Solutions for Every Home Challenge</h2>
-        <div class="features-items">
-          <article>
-            <p class="fontawesome-icon"></p>
-            <i class="fa-solid fa-tree"></i>
-            <p class="features-item-description">Landscaping</p>
-          </article>
-          <article>
-            <p class="fontawesome-icon"></p>
-            <i class="fa-solid fa-toilet"></i>
-            <p class="features-item-description">Plumbing</p>
-          </article>
-          <article>
-            <p class="fontawesome-icon"></p>
-            <i class="fa-solid fa-bolt"></i>
-            <p class="features-item-description">Electrical</p>
-          </article>
-          <article>
-            <p class="fontawesome-icon"></p>
-            <i class="fa-solid fa-hammer"></i>
-            <p class="features-item-description">Remodeling</p>
-          </article>
-          <article>
-            <p class="fontawesome-icon"></p>
-            <i class="fa-solid fa-people-roof"></i>
-            <p class="features-item-description">Roofing</p>
-          </article>
-          <article>
-            <p class="fontawesome-icon"></p>
-            <i class="fa-solid fa-ruler-combined"></i>
-            <p class="features-item-description">Carpentry</p>
-          </article>
-        </div>
-      </div>
-    </section>
-    <section class="reviews">
-      <div class="content-wrapper">
-        <h2>Don't Just Take Our Word for It---Hear from Our Happy Customers!</h2>
-        <article>
-          <figure>
-            <img src="img/pexels-max-rahubovskiy-7061678.jpg"
-              alt="modern home with comfortable armchairs and panoramic windows with view of garden with pathway">
-          </figure>
-          <div>
-            <h3>Lyanne Everywoman <br>09/23</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. </p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
 
-  <footer>
-    <div class="content-wrapper">
-      <div class="footer-content">
-        <div class="contact">
-          <h4>Contact</h4>
-          <address>
-            <p>
-              555-555-5555<br>
-              steven@yourhandyneighbor.com
-            </p>
-          </address>
-        </div>
-        <div class="social">
-          <h4>Social</h4>
-          <div class="social-icons">
-      <a href="" class="icon-circle">
-      <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="" class="icon-circle">
-      <i class="fab fa-twitter"></i>
-      </a>
-      <a href="" class="icon-circle">
-      <i class="fab fa-instagram"></i>
-      </a>        
-          </div>
-        </div>
-      </div>
-      <div class="copyright">
-        <p>Copyright 2023 | Your Handy Neighbor</p>
-      </div>
-    </div>
-  </footer>
+/* General Styles */
 
+html {
+  font-size: 1rem;
+  background-color: #4a4b2f;
+}
 
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+body {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1em;
+  color: #12100e;
+  text-align: left;
+}
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
+ul,
+ol {
+  list-style-type: none;
+}
 
-</html>
+a {
+  color: #12100e;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 1.875em;
+}
+
+h3,
+h4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  margin: 20px 0;
+}
+
+p {
+  font-size: .875em;
+  line-height: 1.285em;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
+/* === Base Header and Footer Styles === */
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  background-color: #d4df9e;
+}
+
+header .content-wrapper {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header figure {
+  width: 60%;
+}
+
+.header-divider {
+  background: #6b654b;
+  height: 3px;
+  width: 100%;
+  margin: 10px 0 20px 0;
+}
+
+header nav {
+  width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+header nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  font-size: 1.125em;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #d4df9e;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper {
+  width: 55%;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
+
+/* Social icons — BASE rule (kept #1) */
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 12.5em;
+}
+
+footer .social-icons a.icon-circle {
+  background-color: #4a4b2f;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+footer .copyright p {
+  margin: 40px 0;
+  color: #12100e;
+}
+
+/* ---------------------Mobile Style-------------------------*/
+
+/* === Homepage ===*/
+
+.hero-area {
+  background: url(../img/pexels-tima-miroshnichenko-heroimage\(1\).jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+aside {
+  background-color: #d4df9e;
+  display: flex;
+  justify-content: center;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #12100e;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #4a4b2f;
+  font-family: 'Oswald', Raleway, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: white;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form-description p {
+  color: #12100e;
+}
+
+.features {
+  background: url(../img/pexels-irina-zhur-9918803.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+
+.features h2 {
+  margin-bottom: 60px;
+  color: white;
+}
+
+.features article {
+  width: 63%;
+  margin: 30px 0;
+}
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  color: white;
+}
+
+.features p {
+  text-align: center;
+  margin: 0;
+  color: #fff;
+}
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.reviews {
+  background-color: #4a4b2f;
+  display: flex;
+  justify-content: center;
+}
+
+.reviews h2 {
+  margin-bottom: 40px;
+  line-height: 2;
+  color: #d4df9e;
+}
+
+.reviews h3 {
+  width: 55%;
+  margin: 20px 0;
+  color: #d4df9e;
+}
+
+.reviews p {
+  color: #d4df9e;
+}
+
+address p {
+  color: #12100e
+}
+
+/* === About Page ===*/
+
+.mission {
+  background-color: #4a4b2f;
+  display: flex;
+  justify-content: center;
+}
+
+.mission h2,
+p {
+  color: #d4df9e;
+}
+
+.crew {
+  background-color: #454130;
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+.crew .crew-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.crew-info article {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* === FAQ Page ===*/
+
+.faq {
+  display: flex;
+  justify-content: center;
+}
+
+.faq .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  margin: 50px 0 0 0;
+}
+
+.faq h2 {
+  margin-bottom: 40px;
+  line-height: 1;
+  color: #d4df9e;
+}
+
+.faq-content {
+  margin-bottom: 50px;
+}
+
+.faq-content h4 {
+  line-height: 1.333;
+  color: #d4df9e;
+}
+
+.faq p {
+  color: #d4df9e;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   ========================================================================== */
+
+@media only screen and (min-width: 768px) {
+
+  /* ================== HomePage TABLET STYLES================= */
+
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
+
+  header {
+    padding: 33px 0px;
+  }
+
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  header figure {
+    width: 30%;
+  }
+
+  header nav {
+    width: 20%;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  .hero-area {
+    min-height: 600px;
+  }
+
+  aside .content-wrapper {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 40%;
+    margin: 0;
+  }
+
+  .features h2 {
+    margin-bottom: 20px;
+  }
+
+  .features article {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+  }
+
+  .features .features-item-description {
+    width: 62%;
+  }
+
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews h2 {
+    width: 85%;
+  }
+
+  .reviews article figure,
+  .reviews article div {
+    width: 49%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
+  }
+
+  footer .content-wrapper {
+    width: 65%;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  footer p {
+    line-height: 1.285;
+  }
+
+  /* Social icons — TABLET override (kept #3, has real change: space-between) */
+  footer .social-icons {
+    width: 12.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+
+  /* ==================  About Page TABLET STYLES================= */
+
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+
+  .mission-content p {
+    width: 50%;
+    flex-flow: column wrap;
+    flex-basis: 40%;
+  }
+
+  .crew {
+    display: flex;
+    justify-content: center;
+    background-color: #6b654b;
+  }
+
+  .crew .crew-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .crew-info article {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  .content-wrapper h2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .contact-content h4 {
+    font-size: 1.5em;
+  }
+
+  /* ================== FAQ Page TABLET STYLES================= */
+
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq-content {
+    flex-basis: 45%;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
+
+  .faq h4,
+  .faq p {
+    font-size: .875em;
+    line-height: 1.125;
+  }
+}
+
+/* ==================  HomePage DESKTOP STYLES ===================================================== */
+
+@media screen and (min-width: 1200px) {
+
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  header {
+    padding: 15px 0;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.875em;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-height: 1.333;
+  }
+
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  .form-description p {
+    font-size: 1.125em;
+  }
+
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%
+  }
+
+  .reviews h2 {
+    padding-bottom: 50px;
+  }
+
+  .reviews article div {
+    width: 42%
+  }
+
+  footer h4 {
+    font-size: 1.875em;
+  }
+
+  /* ==================  About Page DESKTOP STYLES ===================================================== */
+
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .contact-content h4 {
+    font-size: 1.875em;
+  }
+
+  /* ==================  FAQ Page DESKTOP STYLES ===================================================== */
+
+  .faq h2 {
+    width: 100%;
+    font-size: 3em;
+  }
+
+  .faq h4,
+  .faq p {
+    font-size: 1.125em;
+    line-height: 1;
+  }
+}
+
+/* ==========================================================================
+   Print styles.
+   ========================================================================== */
+
+@media print {
+
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

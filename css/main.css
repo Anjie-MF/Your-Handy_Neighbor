@@ -186,7 +186,6 @@ footer .contact {
   margin-bottom: 50px;
 }
 
-/* Social icons — BASE rule (kept #1) */
 footer .social-icons {
   display: flex;
   justify-content: space-around;
@@ -355,6 +354,27 @@ p {
   width: 50%;
   box-sizing: border-box;
   padding: 10px;
+}
+
+.map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.map figure {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.map iframe {
+  width: 100%;
+  height: 300px;
+  display: block;
+  border: 0;
 }
 
 /* === FAQ Page ===*/
@@ -560,7 +580,6 @@ p {
     line-height: 1.285;
   }
 
-  /* Social icons — TABLET override (kept #3, has real change: space-between) */
   footer .social-icons {
     width: 12.5em;
     display: flex;
@@ -623,6 +642,10 @@ p {
 
   .contact-content h4 {
     font-size: 1.5em;
+  }
+
+   .map iframe {
+    height: 400px;
   }
 
   /* ================== FAQ Page TABLET STYLES================= */
@@ -716,6 +739,10 @@ p {
 
   .contact-content h4 {
     font-size: 1.875em;
+  }
+
+  .map iframe { 
+    height: 450px;
   }
 
   /* ==================  FAQ Page DESKTOP STYLES ===================================================== */

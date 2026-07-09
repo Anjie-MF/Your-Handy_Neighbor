@@ -17,16 +17,6 @@ html {
   line-height: 1.4;
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -37,10 +27,6 @@ html {
   text-shadow: none;
 }
 
-/*
- * A better looking default horizontal rule
- */
-
 hr {
   display: block;
   height: 1px;
@@ -49,12 +35,6 @@ hr {
   margin: 1em 0;
   padding: 0;
 }
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
 
 audio,
 canvas,
@@ -65,19 +45,11 @@ video {
   vertical-align: middle;
 }
 
-/*
- * Remove default fieldset styles.
- */
-
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
-
-/*
- * Allow only vertical resizing of textareas.
- */
 
 textarea {
   resize: vertical;
@@ -94,10 +66,7 @@ html {
   background-color: #4a4b2f;
 }
 
-body
-
-/*aka font styles*/
-  {
+body {
   font-family: 'Oswald', sans-serif;
   font-size: 1em;
   color: #12100e;
@@ -124,7 +93,7 @@ h3,
 h4 {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
-  font-size: 1, 125em;
+  font-size: 1.125em;
   margin: 20px 0;
 }
 
@@ -217,6 +186,7 @@ footer .contact {
   margin-bottom: 50px;
 }
 
+/* Social icons — BASE rule (kept #1) */
 footer .social-icons {
   display: flex;
   justify-content: space-around;
@@ -232,7 +202,7 @@ footer .social-icons a.icon-circle {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration: none; 
+  text-decoration: none;
   color: inherit;
 }
 
@@ -253,7 +223,6 @@ footer .copyright p {
   display: flex;
   justify-content: center;
 }
-
 
 aside {
   background-color: #d4df9e;
@@ -356,26 +325,6 @@ address p {
   color: #12100e
 }
 
-footer .social-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 12.5em;
-}
-
-footer .social-icons a.icon-circle {
-  background-color: #4a4b2f;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none; 
-  color: inherit;
-}
-
-
 /* === About Page ===*/
 
 .mission {
@@ -442,47 +391,14 @@ p {
   color: #d4df9e;
 }
 
-footer .social-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 12.5em;
-}
-
-footer .social-icons a.icon-circle {
-  background-color: #4a4b2f;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none; 
-  color: inherit;
-}
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
 
 .hidden,
 [hidden] {
   display: none !important;
 }
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
 
 .sr-only {
   border: 0;
@@ -494,14 +410,7 @@ footer .social-icons a.icon-circle {
   position: absolute;
   white-space: nowrap;
   width: 1px;
-  /* 1 */
 }
-
-/*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
 
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
@@ -514,25 +423,9 @@ footer .social-icons a.icon-circle {
   width: auto;
 }
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
 .invisible {
   visibility: hidden;
 }
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
 
 .clearfix::before,
 .clearfix::after {
@@ -546,15 +439,12 @@ footer .social-icons a.icon-circle {
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
 
   /* ================== HomePage TABLET STYLES================= */
 
-  /* General styles */
   .content-wrapper {
     max-width: 640px;
     margin: 100px 0;
@@ -569,8 +459,6 @@ footer .social-icons a.icon-circle {
     font-size: 1.5em;
     line-height: 1.25;
   }
-
-  /* Header */
 
   header {
     padding: 33px 0px;
@@ -597,14 +485,9 @@ footer .social-icons a.icon-circle {
     display: none;
   }
 
-  /* Hero Area */
-
   .hero-area {
     min-height: 600px;
   }
-
-
-  /* Aside */
 
   aside .content-wrapper {
     margin: 50px 0;
@@ -618,8 +501,6 @@ footer .social-icons a.icon-circle {
     width: 40%;
     margin: 0;
   }
-
-  /* Features */
 
   .features h2 {
     margin-bottom: 20px;
@@ -636,7 +517,6 @@ footer .social-icons a.icon-circle {
     width: 62%;
   }
 
-  /* Reviews */
   .reviews article {
     display: flex;
     justify-content: space-between;
@@ -656,7 +536,6 @@ footer .social-icons a.icon-circle {
     margin: 0;
   }
 
-  /* Footer */
   footer .content-wrapper {
     width: 65%;
   }
@@ -681,148 +560,95 @@ footer .social-icons a.icon-circle {
     line-height: 1.285;
   }
 
-footer .social-icons {
-  width: 12.5em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-footer .social-icons a.icon-circle {
-  background-color: #4a4b2f;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
+  /* Social icons — TABLET override (kept #3, has real change: space-between) */
+  footer .social-icons {
+    width: 12.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   footer .copyright {
     width: 100%;
   }
 
-   /* ==================  About Page TABLET STYLES================= */
+  /* ==================  About Page TABLET STYLES================= */
 
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 20px;
+  }
 
-.mission-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding-top: 20px;
+  .mission-content p {
+    width: 50%;
+    flex-flow: column wrap;
+    flex-basis: 40%;
+  }
+
+  .crew {
+    display: flex;
+    justify-content: center;
+    background-color: #6b654b;
+  }
+
+  .crew .crew-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .crew-info article {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  .content-wrapper h2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .contact-content h4 {
+    font-size: 1.5em;
+  }
+
+  /* ================== FAQ Page TABLET STYLES================= */
+
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq-content {
+    flex-basis: 45%;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
+
+  .faq h4,
+  .faq p {
+    font-size: .875em;
+    line-height: 1.125;
+  }
 }
 
-.mission-content p {
-  width: 50%;
-  flex-flow: column wrap;
-  flex-basis: 40%;
-}
-
-.crew {
-  display: flex;
-  justify-content: center;
-  background-color: #6b654b;
-}
-
-.crew .crew-info {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.crew-info article {
-  width: 50%;
-  box-sizing: border-box;
-  padding: 10px;
-}
-
-.content-wrapper h2 {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-.contact-section .content-wrapper h2 {
-  width: 80%;
-}
-
-.contact-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.contact-content h4 {
-  font-size: 1.5em;
-}
-
-   footer .social-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 12.5em;
-}
-
-footer .social-icons a.icon-circle {
-  background-color: #4a4b2f;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none; 
-  color: inherit;
-}
-
-
-/* ================== FAQ Page TABLET STYLES================= */
-
-.faq .content-wrapper {
-  justify-content: space-between;
-}
-
-.faq-content {
-  flex-basis: 45%;
-}
-
-.faq h2 {
-  width: 100%;
-}
-
-.faq h4,
-.faq p {
-  font-size: .875em;
-  line-height: 1.125;
-}
-}
-
-footer .social-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 12.5em;
-}
-
-footer .social-icons a.icon-circle {
-  background-color: #4a4b2f;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none; 
-  color: inherit;
-}
-
-  /* ==================  HomePage DESKTOP STYLES ===================================================== */
+/* ==================  HomePage DESKTOP STYLES ===================================================== */
 
 @media screen and (min-width: 1200px) {
-
 
   .content-wrapper {
     max-width: 960px;
@@ -892,25 +718,6 @@ footer .social-icons a.icon-circle {
     font-size: 1.875em;
   }
 
-   footer .social-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 12.5em;
-}
-
-footer .social-icons a.icon-circle {
-  background-color: #4a4b2f;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none; 
-  color: inherit;
-}
-
   /* ==================  FAQ Page DESKTOP STYLES ===================================================== */
 
   .faq h2 {
@@ -925,30 +732,8 @@ footer .social-icons a.icon-circle {
   }
 }
 
-footer .social-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 12.5em;
-}
-
-footer .social-icons a.icon-circle {
-  background-color: #4a4b2f;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none; 
-  color: inherit;
-}
-
-
 /* ==========================================================================
    Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
 @media print {
@@ -958,7 +743,6 @@ footer .social-icons a.icon-circle {
   *::after {
     background: #fff !important;
     color: #000 !important;
-    /* Black prints faster */
     box-shadow: none !important;
     text-shadow: none !important;
   }
@@ -976,10 +760,6 @@ footer .social-icons a.icon-circle {
     content: " (" attr(title) ")";
   }
 
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
   a[href^="#"]::after,
   a[href^="javascript:"]::after {
     content: "";
@@ -995,10 +775,6 @@ footer .social-icons a.icon-circle {
     page-break-inside: avoid;
   }
 
-  /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
   thead {
     display: table-header-group;
   }
